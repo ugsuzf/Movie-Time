@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #f3ce13;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="IzlenenlerController">
+    <children>
+        <ToolBar pickOnBounds="false" prefHeight="40.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <Button fx:id="news" alignment="TOP_CENTER" layoutX="806.0" layoutY="13.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#news" prefHeight="25.0" prefWidth="181.0" text="News">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor>
+                </Button>
+                <Button alignment="TOP_CENTER" lineSpacing="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#öneriler" prefWidth="154.0" text="Suggestions" textAlignment="CENTER">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+                <Button alignment="TOP_CENTER" defaultButton="true" layoutX="10.0" layoutY="12.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#izlenenler" prefWidth="154.0" text="Watched List">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+
+                <Button alignment="TOP_CENTER" layoutX="66.0" layoutY="12.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#favoriler" prefWidth="154.0" text="Favorites">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+                <Button alignment="TOP_CENTER" layoutX="66.0" layoutY="12.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#listem" prefWidth="154.0" text="Watch List">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+                <Button alignment="TOP_CENTER" layoutX="122.0" layoutY="12.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#ayarlar" prefHeight="25.0" prefWidth="181.0" text="Settings">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+            </items>
+        </ToolBar>
+        <AnchorPane layoutY="76.0" prefHeight="299.0" prefWidth="600.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+         <children>
+            <TableView fx:id="tableview" layoutX="7.0" layoutY="14.0" prefHeight="293.0" prefWidth="586.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="190.0" text="Movie Name" />
+                <TableColumn fx:id="rate" prefWidth="55.0" text="Rate" />
+                  <TableColumn fx:id="myR" minWidth="0.0" prefWidth="98.0" text="My Rate" />
+                  <TableColumn fx:id="myC" prefWidth="242.0" text="My Commnet" />
+                  <TableColumn fx:id="userRate" prefWidth="174.0" text="Users Rate" />
+                  <TableColumn fx:id="info" prefWidth="400.0" text="Info" />
+              </columns>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem fx:id="remove" mnemonicParsing="false" text="Remove from watched" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

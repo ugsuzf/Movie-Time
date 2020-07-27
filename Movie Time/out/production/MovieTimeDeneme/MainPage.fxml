@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #f3ce13;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainPageController">
+    <children>
+        <ToolBar pickOnBounds="false" prefHeight="40.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <Button defaultButton="true" fx:id="news" alignment="TOP_CENTER" layoutX="806.0" layoutY="13.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#news" prefHeight="25.0" prefWidth="181.0" text="News">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor>
+                </Button>
+                <Button alignment="TOP_CENTER" lineSpacing="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#öneriler" prefWidth="154.0" text="Suggestions" textAlignment="CENTER">
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+                <Button alignment="TOP_CENTER" layoutX="10.0" layoutY="12.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#izlenenler" prefWidth="154.0" text="Watched List">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+
+                <Button alignment="TOP_CENTER" layoutX="66.0" layoutY="12.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#favoriler" prefWidth="154.0" text="Favorites">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+                <Button alignment="TOP_CENTER" layoutX="66.0" layoutY="12.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#listem" prefWidth="154.0" text="Watch List">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+                <Button alignment="TOP_CENTER" layoutX="122.0" layoutY="12.0" lineSpacing="30.0" minWidth="195.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#ayarlar" prefHeight="25.0" prefWidth="181.0" text="Settings">
+                    <cursor>
+                        <Cursor fx:constant="E_RESIZE" />
+                    </cursor></Button>
+            </items>
+        </ToolBar>
+      <WebView fx:id="viewweb" layoutX="-1.0" layoutY="94.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="83.60000000000002" />
+    </children>
+</AnchorPane>
