@@ -58,6 +58,6 @@ Favorites<br/>
 Watch List Page<br/>
 ![Watch List](https://github.com/ugsuzf/Movie-Time/blob/master/Movie%20Time/img/watch%20list.png)<br/><br/><br/><br/><br/>
 Setting Page<br/>
-![Settings](https://github.com/ugsuzf/Movie-Time/blob/master/Movie%20Time/img/settings.png)<br/><br/><br/><br/><br/>
+![Settings](https://github.com/ugsuzf/Movie-Time/blob/master/Movie%20Time/img/settings.png)<br/>
 When user changes own username, program checks the new username is acceptable. if not acceptable gives warning. 
 
